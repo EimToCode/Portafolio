@@ -11,66 +11,7 @@ body {
 	overflow-x: hidden;
 }
 
-.grid {
-	display: grid;
-	grid-template-areas:
-    "one two two"
-    "three_first three_first three_first "
-    "four_portfolio four_portfolio four_portfolio"
-    "five_aboutme five_aboutme five_aboutme"
-    "six_footer six_footer six_footer";
-    grid-template-columns: 70px 1fr 1fr;
-	grid-template-rows: repeat(5, auto);
 
-}
-
-
-.one {
-	grid-area: one;
-}
-
-.two {
-	grid-area: two;
-}
-
-.three_first {
-	grid-area: three_first;
-}
-
-
-.four_portfolio {
-	grid-area: four_portfolio;
-}
-
-.five_aboutme {
-	grid-area: five_aboutme;
-}
-
-.six_footer {
-	grid-area:six_footer;
-
-}
-
-.grid_content {
-	display: grid;
-	grid-template-areas:
-    "one two two"
-    "content_tittle content_tittle content_tittle "
-    "content_full content_full content_full"
-    "six_footer six_footer six_footer";
-    grid-template-columns: 70px 1fr 1fr;
-	grid-template-rows: repeat(4, auto);
-
-}
-
-.content_tittle {
-	grid-area: content_tittle;
-
-}
-
-.content_full {
-	grid-area: content_full;
-}
 
 /*-----Codigo sin grid------*/
 
@@ -228,7 +169,7 @@ body {
 	text-align: center;
 }
 
-h1 {
+.tittle {
 	font-family: 'Fredoka One';
 	font-size: 40px;
 	color: #000;
@@ -245,11 +186,12 @@ h2{
 	margin-top: 10px;
 }
 
-h3 {
+.subtittle {
+	font-family: 'Cutive Mono', monospace;
 	font-size: 16px;
+	font-weight: bold;
 	color: #828282;
 	padding:5px;
-	text-align: right;
 }
 
 ul {
