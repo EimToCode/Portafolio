@@ -8,22 +8,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Chouuko</title>
-	<link rel="stylesheet" href="estilos.css" />
+
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nixie+One&display=swap" rel="stylesheet">
 
 <!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<!-- CSS propio -->
+	<link rel="stylesheet" href="estilos.css" />
 
 </head>
 
 <!--------------------BODY------------------------->
 <!-- Cuerpo de la web-->
 <body>
-<!-- Inicia la Navegacion-->
 
+<!-- Inicia la Navegacion-->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <div class="container-fluid">
+	  <div class="container-fluid ">
 	    <a class="navbar-brand" href="#">
 	      <img src="imagenes/cko23.png" alt="" width="70" >
 	    </a>
@@ -33,10 +35,10 @@
 	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="index_html">Home</a>
+	          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="portfolio_html">Portfolio</a>
+	          <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
 	        </li>
 	        <li class="nav-item">
 	          <a class="nav-link active" aria-current="page" href="about_me.html">About</a>
@@ -50,7 +52,7 @@
 	      </ul>
 	      <form class="d-flex">
 	        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-	        <button class="btn btn-outline-success" type="submit">Search</button>
+	        <button type="submit">Search</button>
 	      </form>
 	    </div>
 	  </div>
@@ -60,34 +62,37 @@
 
 
 <!-- Primera seccion-->
-	<div class="first">
-			<div class="container">
+	<div class="container_first">
+		<div class="container-fluid text-center">
+	    <div class="card border-0">
+	      <img class="card-img" src="imagenes/portada.jpg">
+	      <div class="card-img-overlay d-flex justify-content-center align-items-start flex-column">
+	        <div class="card-title tittle align-items-start">Looking for a commission?</div>
 				<div class="row">
-				    <div class="col">
-						<div class="tittle"> Welcome to my site!</div>
-						<div class="subtittle"> Are you looking for a commission?</div>
-						<a href="commission.html"><button> Commission info</button></a>
-						<a href="contact.html"><button> Contact me</button></a>
-				    </div>
-
-				    <div class="col">
-						<img class="img_first" src="imagenes/cko23.png"> <!---logo de la derecha---->
-				    </div>
-				  </div>
+					<div class="col-sm text-center">
+						<a href="commission.html"><button><div class="btn_txt"> Details </div></button></a>
+					</div>
+					<div class="col-sm">
+						<a href="contact.html"><button><div class="btn_txt"> Contact</div></button></a>
+					</div>
 				</div>
-			</div>
+	    </div>
+	  </div>
 	</div>
+
+
 
 <!-- Segunda seccion-->
 	
 	<h2>Portfolio </h2>	
+	<div class="container">
 		<div class="card-group text-center">
 		  <div class="card">
 		    <img src="http://placekitten.com/g/1280/720" class="card-img-top" alt="...">
 		    <div class="card-body">
 		      <h5 class="card-title">Card title</h5>
 		    <div class="card-footer">
-		      <a href="#" class="btn btn-primary">see full project</a>
+		      <a href="#"><button> See full project </button></a>
 		    </div>
 		    </div>
 		  </div>
@@ -96,7 +101,7 @@
 		    <div class="card-body">
 		      <h5 class="card-title">Card title</h5>
 		    <div class="card-footer">
-		      <a href="#" class="btn btn-primary">see full project</a>
+		      <a href="#"><button> See full project </button></a>
 		    </div>
 		    </div>
 		  </div>
@@ -105,12 +110,12 @@
 		    <div class="card-body">
 		      <h5 class="card-title">Card title</h5>
 		    <div class="card-footer">
-		      <a href="#" class="btn btn-primary">see full project</a>
+		      <a href="#"><button> See full project </button></a>
 		    </div>
 		    </div>
 		  </div>
 		</div>
-
+	</div>
 
 <!-- Tercera seccion-->
 	
@@ -118,8 +123,8 @@
 			<div class="aboutme_card">
 			<div class="container">
 				  <div class="row">
-				    <div class="col-sm">
-						<img class="img_table" src="http://placekitten.com/g/640/480"> 
+				    <div class="col-sm text-center">
+						<img class="img-fluid" src="imagenes/avi_da.png"> 
 				    </div>
 				    <div class="col-sm">
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -134,51 +139,47 @@
 	
 <!-------------------FOOTER---------------------------->
 <!-- Inicio Footer-->
-		<div class="footer">
-			<div class="footer_container">
-				<div class="footer_sections">
-				
-					<div class="container">
-					 	<div class="row">
-						    <div class="col">
-						    	<div class="subtittle"> Navigation </div>
-								<ul>
-									<li><a href="index.html">	Home</a></li>
-									<li><a href="portfolio.html">	Portfolio</a></li>
-									<li><a href="about_me.html">	About Me</a></li>
-									<li><a href="commission.html">	Commission</a></li>
-									<li><a href="contact.html">	Contact</a></li>
-								</ul>
-						    </div>
-						    <div class="col">
-						    	<div class="subtittle"> Terms of Service </div>
-									<a href="$">	Terms of Service</a><br>
-									<a href="$">	Privacy</a>
+<div class="footer footer_container footer_sections">			
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="subtittle"> Navigation </div>
+				<ul>
+					<li><a href="index.html">	Home</a></li>
+					<li><a href="portfolio.html">	Portfolio</a></li>
+					<li><a href="about_me.html">	About Me</a></li>
+					<li><a href="commission.html">	Commission</a></li>
+					<li><a href="contact.html">	Contact</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<div class="subtittle"> Terms of Service </div>
+				<ul>
+					<li><a href="$">	Terms of Service</a></li>
+					<li><a href="$">	Privacy</a></li>
+				</ul>
+				<div class="subtittle">Social Media </div>
+					<a href="https://twitter.com/chouuko"><img src="imagenes/twitter.png" width="40px"></a>
+					<a href="https://instagram.com/chouuko"><img src="imagenes/instagram.png" height="40px"></a>
+					<a href="https://facebook.com/chouuko"><img src="imagenes/facebook.png" width="40px"></a>
+			</div>
+			<div class="col">
+				<div class="subtittle">Suscribe to our Newsletter</div>
+				<form>
+					<label for="email">Your email</label><br>
+					<input type="e-mail" name="email" /><br>
+					<input type="submit" value="Suscribir"/>
+				</form>
+			</div>
+		</div>
+	<div class="footer_signature">©Chouuko 2016-2020</div>
+	</div>
+</div> 
 
-								<div class="subtittle">Social Media </div>
-									<img src="imagenes/twitter.png" width="40px">
-									<img src="imagenes/instagram.png" height="40px">
-									<img src="imagenes/facebook.png" width="40px">
-						    </div>
-						    <div class="col">
-						    	<div class="subtittle">Suscribe to our Newsletter</div>
-								<form>
-								    <label for="email">Your email</label><br>
-						    		<input type="e-mail" name="email" /><br>
-								    <input type="submit" value="Suscribir"/>
-								</form>
-						    </div>
-						</div>
-					 </div>
-				</div>
-				
-			<div class="footer_signature">©Chouuko 2016-2020</div>
-		</div> 
+<!------------------------------------------------->
 
-	<!------------------------------------------------->
-
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<!-- Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
 </body>
 <!------------------------------------------------->
