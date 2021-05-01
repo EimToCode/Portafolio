@@ -87,6 +87,8 @@ a {
 
 a:hover {
 	color: black;
+	transform: scale(1.3);
+	padding: 5px;
 }
 
 p {
