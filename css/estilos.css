@@ -1,3 +1,5 @@
+/* Variables */
+/*CSS*/
 * {
   margin: 0;
   padding: 0; }
@@ -6,7 +8,6 @@ body {
   background-image: url("imagenes/fondo.png");
   background-repeat: repeat;
   font-family: 'Cutive Mono', monospace;
-  color: gray;
   overflow-x: hidden; }
 
 .header_nav {
@@ -49,7 +50,7 @@ h3 {
   margin-top: 10px; }
 
 .jobs {
-  background-color: #9999FF;
+  background-color: #9999ff;
   color: #fff; }
 
 .btn_txt {
@@ -59,7 +60,7 @@ h3 {
   font-family: 'Cutive Mono', monospace;
   font-size: 16px;
   font-weight: bold;
-  color: #ffffff;
+  color: #fff;
   padding: 5px; }
 
 ul {
@@ -70,17 +71,14 @@ a {
   color: #b7b7ff; }
 
 a:hover {
-  color: black;
+  color: #FFBFD6;
   transform: scale(1.3);
   padding: 5px; }
-
-p {
-  padding: 20px; }
 
 button {
   background-color: #9999ff;
   text-decoration: none;
-  color: white;
+  color: #fff;
   width: 100%;
   border-color: #9999ff;
   border-radius: 5px;
@@ -88,7 +86,9 @@ button {
   margin: 5px; }
 
 button:hover {
-  background-color: black; }
+  background-color: #FFBFD6;
+  border-color: #FFBFD6;
+  color: #000; }
 
 /* Portfolio */
 .row,
