@@ -69,24 +69,33 @@
 	<div class="content_tittle"> 
 		<h2>Contact Me</h2>
 	</div> 
-	
-	<div class="container text-center">
-		<form>
-		<label for="name">Name</label>
-		<input type="text" name="name" /><br>
-		<label for="email_contacto">Email</label>
-		<input type="e-mail" name="email_contacto" /><br>
-		<label for="What_are_you_looking_for">What are you looking for?</label><br>
-		<select name="What_are_you_looking_for">
-			<option value="commission">Commission</option>
-			<option value="collab">Collab</option>
-			<option value="merchandise">Merchandise</option>
-		</select><br>
-		<label for="comentarios">Consult</label><br>
-		<textarea name="comentarios">How can I help you?</textarea><br>
-		<input type="checkbox" name="acepta" value="1" />Accept terms and conditions<br>
-		<input type="submit" value="Send"/>
-		<input type="reset" value="Erase"/>
+	<div class="container">
+	<form>
+		<div class="mb-3">
+			<label for="InputName" class="form-label">Name</label>
+			<input type="name" class="form-control" id="InputName">
+			<label for="InputEmail1" class="form-label">Email address</label>
+			<input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+			<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+		</div>
+		<label for="InputInquirie" class="form-label">What are you looking for?</label>
+		<select class="form-select" aria-label="Select inquiries">
+			<option selected>Choose an option</option>
+			<option value="1">Full body</option>
+			<option value="2">Headshot</option>
+			<option value="3">Other</option>
+		  </select>
+		<div class="mb-3">
+			<label for="FormControlTextarea1" class="form-label">How can I help you?</label>
+			<textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+		  </div>
+		  <div class="form-check">
+			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			<label class="form-check-label" for="flexCheckDefault">
+				Accept terms and conditions
+			</label>
+			</div>
+		<button type="submit">Submit</button>
 		</form>
 	</div>
 
