@@ -133,5 +133,22 @@ button:hover {
     font-size: 50%;
     width: auto;
   }
+
+  .footer {
+    padding: 1rem;
+    font-size: 0.75rem;
+  }
+  a:hover {
+    color: #FFBFD6;
+    transform: scale(1);
+    padding: 1rem; }
+  ul {
+    list-style-type: none;
+    padding:0;
+    padding-bottom: 1rem;
+    margin:0; }
+  .subtittle {
+    font-size: 0.75rem;
+  }
 }
 
