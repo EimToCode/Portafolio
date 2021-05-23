@@ -2,13 +2,15 @@
 /*CSS*/
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0; 
+  overflow-x: hidden;}
 
 body {
   background-image: url("../imagenes/fondo.png");
   background-repeat: repeat;
   font-family: 'Cutive Mono', monospace;
   overflow-x: hidden; }
+
 
 .header_nav {
   display: flex;
@@ -52,9 +54,10 @@ h3 {
 
 h4 {
   font-family: 'Fredoka One';
-  font-size: 4em;
+  font-size: 3rem;
   color: #000;
 }
+
 
 .jobs {
   background-color: #9999ff;
@@ -121,4 +124,14 @@ button:hover {
 
 @media screen and (max-width: 600px) {
   .column {
-    width: 100%; } }
+    width: 100%; } 
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 50%;
+    width: auto;
+  }
+}
+
